@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #FDF8EC;
+}
+
+/* LAYOUT */
+
+.border--around-within {
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.border--bottom {
+  border-bottom: 2px solid black;
+}
+
+.border--on-sides-within {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  box-sizing: border-box;
+}
+
+.bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.flex-center--vertical {
+  display: flex;
+  align-items:center;
+  width: 100%;
+  background-color: #FDF8EC;
+}
+
+.flex-end--vertical {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.horizontal-indent {
+  height: 2vh;
+  width: 100%;
+  background-color: #FDF8EC;
+}
+
+.icon {
+  margin: 5px;
+  line-height: 1.15;
+  padding: 2px 0;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  min-height: 6vh;
+  flex-grow: 1;
+  border-right: 2px solid black;
+  box-sizing: border-box;
+}
+
+.note {
+  margin: 10px;
+  white-space: pre-wrap;
+  box-shadow: 5px 5px #414042;
+}
+
+.note-container {
+  width: 100%;
+  min-height: 84vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-date {
+  margin: 5px;
+}
+
+.note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF6036;
+}
+
+.note-text {
+  margin: 5px;
+}
+
+.side-indent--lg {
+  min-height: 84vh;
+  width: 2vh;
+  background-color: #FDF8EC;
+}
+
+.side-indent--sm { 
+  min-height: 6vh;
+  width: 2vh;
+  background-color: #FDF8EC;
+}
+
+/* INTERACTIVITES */
+
+.btn-like {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  min-width: 6.5rem;
+  min-height: 6vh;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  width: 100%;
+  background-color: #FDF8EC;
+  margin-right: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  margin: 5px 5px 5px 0;
+  overflow: hidden;
+  background-color: #FDF8EC;
+  margin-right: 5px;
+}
+
+.textarea:focus {
+  outline: none;
+}
