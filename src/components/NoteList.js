@@ -14,9 +14,9 @@ const NoteList = ({ handleDeleteNote }) => {
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem("my_notes_key"));
-    /*if (savedNotes && savedNotes.length > 0)  {
+    if (savedNotes && savedNotes.length > 0)  {
       setNotes(savedNotes);
-    }*/
+    }
   }, [fromNewest]);
 
   return (
